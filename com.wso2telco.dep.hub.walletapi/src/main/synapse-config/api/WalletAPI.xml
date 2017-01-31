@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/transaction" name="WalletAPI" xmlns="http://ws.apache.org/ns/synapse">
+  <resource methods="POST" protocol="http" uri-template="/{endUserId}/payments">
+    <inSequence>
+      <log>
+        <property name="payment operation" value="called"/>
+        <property name="body" value="$body"/>
+      </log>
+    </inSequence>
+    <outSequence/>
+    <faultSequence/>
+  </resource>
+  <resource methods="GET" protocol="http" uri-template="/{endUserId}/list">
+    <inSequence>
+      <log>
+        <property name="list transaction operation" value="called"/>
+        <property name="body" value="$body"/>
+      </log>
+    </inSequence>
+    <outSequence/>
+    <faultSequence/>
+  </resource>
+  <resource methods="POST" protocol="http" uri-template="/{endUserId}/refund">
+    <inSequence>
+      <log>
+        <property name="Refund operation" value="called"/>
+        <property name="body" value="$body"/>
+      </log>
+    </inSequence>
+    <outSequence/>
+    <faultSequence/>
+  </resource>
+  <resource methods="GET" protocol="http" uri-template="/{endUserId}/balance">
+    <inSequence>
+      <log>
+        <property name="balance operation" value="called"/>
+        <property name="body" value="$body"/>
+      </log>
+    </inSequence>
+    <outSequence/>
+    <faultSequence/>
+  </resource>
+</api>

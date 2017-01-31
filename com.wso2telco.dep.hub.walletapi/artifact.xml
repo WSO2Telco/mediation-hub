@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts/>
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="WalletAPI" groupId="com.example.com.wso2telco.dep.hub.walletapi.api" version="2.1.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/WalletAPI.xml</file>
+    </artifact>
+</artifacts>
